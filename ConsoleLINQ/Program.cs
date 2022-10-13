@@ -30,5 +30,12 @@ var MyQuery2 =
 Console.WriteLine(String.Join(" ", MyQuery2));
 
 
+//3 пример 
 
 
+var MyQuery3 = cities1.Where(v => v.ToLower().EndsWith("а")).Select(v => $"<{v.ToUpper()}>");
+Console.WriteLine(String.Join(" ", MyQuery3));
+
+var arr3 = cities1.Where(v => v.ToLower().EndsWith("а")).Select(v => $"<{v.ToUpper()}>").ToArray();
+Console.WriteLine(String.Join(" ", arr3));
+Console.WriteLine(String.Join(Environment.NewLine, arr3));
