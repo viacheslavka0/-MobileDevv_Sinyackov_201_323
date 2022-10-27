@@ -1,0 +1,26 @@
+﻿<Window x:Class="wpfResourceWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfResourceWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300">
+    <Window.Resources>
+        <SolidColorBrush x:Key="background_Play" Color="Aquamarine"></SolidColorBrush>
+        <SolidColorBrush x:Key="background_Stop" Color="Red"></SolidColorBrush>
+        <ContentControl x:Key="Content_Play" Content="PLAY!"/>
+    </Window.Resources>
+    <StackPanel Margin="6">
+
+        <Button Content="1" Height="50" Background="LightCoral"/>
+        <Button Content="2" Height="50" Background="LemonChiffon"/>
+        <Button Content="3" Background="{StaticResource background_Play}"/>
+        <Button Content="4" Background="{StaticResource background_Stop}"/>
+        <Button Content="5" Background="{DynamicResource background_Play}"/>
+        <Button Content="Change background Play" Click="buChangePlay"/>
+        <Button Content='{DynamicResource background_Play}'
+                Height="50"
+                Background="{DynamicResource =}"
+    </StackPanel>
+</Window>
