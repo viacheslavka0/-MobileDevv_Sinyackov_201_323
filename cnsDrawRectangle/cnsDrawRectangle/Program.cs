@@ -3,7 +3,6 @@
 using System;
 
 bool isContinue = true;
-bool isPouring = true;
 do
 {
     
