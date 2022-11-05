@@ -1,46 +1,32 @@
-﻿using System;
+﻿var leters = "    a b c d e f g h    ";
 
-const int length = 10;
+Console.WriteLine(leters);
+//Console.BackgroundColor = ConsoleColor.White; 15
+//Console.BackgroundColor = ConsoleColor.Black; 0
 
-string[,] chessBoard = new string[length, length];
-string[] alphabet = { "", "a", "b", "c", "d", "e", "f", "g", "h", "" };
+int g = 2;
 
-for (int i = 0; i < length; i++)
+for (int x = 1; x <= 8; x++)
 {
-    for (int j = 0; j < length; j++)
-    {
-        if ((i == 0 && j == 0) || (i == 9 && j == 9) || (i == 0 && j == 9) || (i == 9 && j == 0))
-        {
-            chessBoard[i, j] = "■";
-            Console.Write($"{chessBoard[i, j],2}");
-        }
-        else if (i == 0 || i == 9)
-        {
-            chessBoard[i, j] = alphabet[j];
-            Console.Write($"{chessBoard[i, j],2}");
-        }
-        else if (j == 0 || j == 9)
-        {
-            chessBoard[i, j] = $"{9 - i}";
-            Console.Write($"{chessBoard[i, j],2}");
-        }
-        else
-        {
-            chessBoard[i, j] = "■";
+    Console.Write($" {x} ");
 
-            if ((i + j) % 2 == 0)
-            {
-                Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write($"{chessBoard[i, j],2}");
-                Console.ResetColor();
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.Write($"{chessBoard[i, j],2}");
-                Console.ResetColor();
-            }
-        }
+    for (int y = 0; y < 8; y++)
+    {
+        if (g % 2 == 0)
+            Console.BackgroundColor = ConsoleColor.Black;
+        else
+            Console.BackgroundColor = ConsoleColor.White;
+
+        g++;
+
+        Console.Write("  ");
+        Console.ResetColor();
     }
+    Console.Write($" {x} ");
+
+    g++;
+
     Console.WriteLine();
 }
+Console.ResetColor();
+Console.WriteLine(leters);
