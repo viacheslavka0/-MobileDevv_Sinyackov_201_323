@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wfaImageContour", "wfaImageContour\wfaImageContour.csproj", "{767690B3-FD57-4F1E-9E4F-21097E258091}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpfCommand", "wpfCommand\wpfCommand.csproj", "{AA82B64A-E613-4564-AA13-B4B5AEC6C7E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{767690B3-FD57-4F1E-9E4F-21097E258091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{767690B3-FD57-4F1E-9E4F-21097E258091}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{767690B3-FD57-4F1E-9E4F-21097E258091}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{767690B3-FD57-4F1E-9E4F-21097E258091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA82B64A-E613-4564-AA13-B4B5AEC6C7E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA82B64A-E613-4564-AA13-B4B5AEC6C7E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA82B64A-E613-4564-AA13-B4B5AEC6C7E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA82B64A-E613-4564-AA13-B4B5AEC6C7E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {124B8E6A-3EC4-4EE2-9128-6015830AD763}
+		SolutionGuid = {02B912C4-B12C-4B8E-98B6-20546F6B53A0}
 	EndGlobalSection
 EndGlobal
