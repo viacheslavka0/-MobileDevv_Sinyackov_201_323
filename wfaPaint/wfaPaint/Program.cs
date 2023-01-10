@@ -1,4 +1,4 @@
-namespace WinFormPaint
+namespace wfaPaint
 {
     internal static class Program
     {
